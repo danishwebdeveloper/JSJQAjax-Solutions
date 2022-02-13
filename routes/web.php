@@ -1,8 +1,10 @@
 <?php
 
+use App\Http\Controllers\JsonAjaxController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RecordController;
 use Illuminate\Contracts\Cache\Store;
+use Symfony\Component\HttpKernel\DataCollector\AjaxDataCollector;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,5 +24,7 @@ use Illuminate\Contracts\Cache\Store;
 Route::resource('/record', RecordController::class);
 // Route::get('record', RecordController::class)
 // Route::post('record/store', 'RecordController@store');
+
+Route::get('/jsonajax', [JsonAjaxController::class, 'index']);
 
 

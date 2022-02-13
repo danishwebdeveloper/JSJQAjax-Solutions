@@ -59,7 +59,7 @@
                 <div class="modal-content">
 
                     <form id="todo_form">
-                        @csrf
+
                         {{-- Modal Header --}}
                         <div class="modal-header">
                             <h4 class="modal-title" id="todo_title"></h4>
@@ -86,6 +86,8 @@
     </div>
 
     <script type="text/javascript">
+
+
 
         $(document).ready(function() {
             $.ajaxSetup({
