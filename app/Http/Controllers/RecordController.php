@@ -90,7 +90,13 @@ class RecordController extends Controller
      */
     public function destroy(record $record)
     {
+        // $data = array();
+
         $delete = $record->delete();
+        // if($delete){
+        //     $data['success'] = 1;
+        //     $data['msg'] = 'Delete Successfully',
+        // }
         return response()->json($delete);
     }
 }
