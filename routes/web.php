@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\AjaxCrudController;
+use App\Http\Controllers\CompanyController;
 use App\Http\Controllers\JsonAjaxController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RecordController;
@@ -21,10 +23,14 @@ use Symfony\Component\HttpKernel\DataCollector\AjaxDataCollector;
 //    return view('welcome');
 //});
 
-Route::resource('/record', RecordController::class);
+// Route::resource('/record', RecordController::class);
 // Route::get('record', RecordController::class)
 // Route::post('record/store', 'RecordController@store');
 
-Route::get('/jsonajax', [JsonAjaxController::class, 'index']);
+// Route::get('/jsonajax', [JsonAjaxController::class, 'index']);
 
+// Route::get('/functiontest', function(){
+//     return view('fucntiontest');
+// });
 
+Route::resource('/ajaxcrud', CompanyController::class);
