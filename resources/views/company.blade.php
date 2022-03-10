@@ -52,7 +52,6 @@
       </div>
     <input type="button" id="addBtn" value="Press"/>
 
-
     <script>
         $.ajaxSetup({
   headers: {
@@ -82,15 +81,15 @@
                     // console.log(response);
                     $('#err_file').removeClass('d-block');
              $('#err_file').addClass('d-none');
-                    if(response.status == 200) {
-                        console.log(response);
+              if(response.status == 200) {
+              console.log(response);
                $('#responseMsg').removeClass("alert-danger");
                $('#responseMsg').addClass("alert-success");
                $('#responseMsg').html(response.message);
                $('#responseMsg').show();
                     }
                     else{
-                $('#responseMsg').removeClass("alert-success");
+               $('#responseMsg').removeClass("alert-success");
                $('#responseMsg').addClass("alert-danger");
                $('#responseMsg').html(response.errors);
                $('#responseMsg').show();
