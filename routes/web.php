@@ -5,6 +5,7 @@ use App\Http\Controllers\CompanyController;
 use App\Http\Controllers\JsonAjaxController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RecordController;
+use App\Http\Controllers\vanillaJSController;
 use Illuminate\Contracts\Cache\Store;
 use Symfony\Component\HttpKernel\DataCollector\AjaxDataCollector;
 
@@ -34,3 +35,4 @@ use Symfony\Component\HttpKernel\DataCollector\AjaxDataCollector;
 // });
 
 Route::resource('/ajaxcrud', CompanyController::class);
+Route::get('/vanilla', [vanillaJSController::class, 'index']);
