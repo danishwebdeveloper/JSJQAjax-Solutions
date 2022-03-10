@@ -1,16 +1,10 @@
 <?php
             $list = [
-                '' => Yii::t('lom', 'choose action'),
-                'renewed-1' => Yii::t('lom', 'AV verlängert: ja'),
-                'renewed-0' => Yii::t('lom', 'AV verlängert: nein'),
-                'expired-1' => Yii::t('lom', 'AV ausgelaufen: ja'),
-                'expired-0' => Yii::t('lom', 'AV ausgelaufen: nein'),
-                'reactivationstarted-1' => Yii::t('lom', 'Rückholung eingeleitet: ja'),
-                'reactivationstarted-0' => Yii::t('lom', 'Rückholung eingeleitet: nein'),
-                'reactivationfailed-1' => Yii::t('lom', 'Rückholung gescheitert: ja'),
-                'reactivationfailed-0' => Yii::t('lom', 'Rückholung gescheitert: nein'),
-                'reactivated-1' => Yii::t('lom', 'zurückgeholt: ja'),
-                'reactivated-0' => Yii::t('lom', 'zurückgeholt: nein'),
+                '' => cHtml::t('lom', 'choose action'),
+                'renewed-1' => cHtml::t('lom', 'AV verlängert: ja'),
+                'renewed-0' => cHtml::t('lom', 'AV verlängert: nein'),
+                'expired-1' => cHtml::t('lom', 'AV ausgelaufen: ja'),
+                'expired-0' => cHtml::t('lom', 'AV ausgelaufen: nein'),
             ];
             echo CHtml::dropDownList('clist', '', $list);
             ?>
